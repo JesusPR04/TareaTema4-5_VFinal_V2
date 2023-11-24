@@ -1,0 +1,31 @@
+.menuCompraTitulo {
+    text-align: center;
+    /* padding: 2em; */
+}
+
+#compraTitulo {
+    padding-top: 10%;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.menu img {
+    width: 255px;
+    height: 250px;
+    border-radius: 5%;
+}
+
+.menu div {
+    margin: 5%;
+}
+
+.plato {
+    margin-bottom: 2em;
+}

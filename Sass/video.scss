@@ -1,0 +1,58 @@
+#tituloVideo {
+    padding-top: 10%;
+    text-align: center;
+}
+
+#videoContenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#video {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 2%;
+    border-radius: 5%;
+    border: 5px solid #bda058;
+}
+
+.animated-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #bda058;
+    color: #2A363B;
+    border: 2px solid #bda058;
+    transition: background 0.4s linear;
+    margin-top: 5%;
+    margin-left: 46%;
+}
+
+.animated-link:hover {
+    animation: bounce 0.4s ease-in-out infinite;
+    background-color: #EFB810;
+    border-color: #bda058;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25%,
+    75% {
+        transform: translate(10px, 0);
+    }
+
+    50% {
+        transform: translate(-10px, 0);
+    }
+}

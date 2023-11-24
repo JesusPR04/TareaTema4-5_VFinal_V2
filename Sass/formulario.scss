@@ -1,0 +1,61 @@
+#formulario h2 {
+    text-align: center;
+    padding: 2em;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    margin-bottom: 5%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#formCompra div {
+    margin-bottom: 5%;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #bda058;
+    /* Color de fondo */
+    color: #2A363B;
+    /* Color del texto */
+    border: 2px solid #bda058;
+    /* Color del borde */
+}
+
+/* Cambio de estilo al pasar el ratón por encima */
+.boton:hover {
+    background-color: #EFB810;
+    border-color: #bda058;
+}
+
+.alinearPrecioBoton {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#botonRegistro {
+    /* Espacio entre los botones de registro e inicar sesión.  */
+    margin-bottom: 15%;
+}

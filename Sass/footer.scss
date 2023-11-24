@@ -1,0 +1,28 @@
+footer {
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+}
+
+#redes-sociales {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+#redes-sociales img {
+    width: 48px;
+    height: 48px;
+    margin: 1%;
+}
+
+#copyRight {
+    text-decoration: none;
+    font-family: "Arial", sans-serif;
+    color: #bda058;
+}
+
+#copyRight:hover {
+    text-decoration: underline;
+    color: blue;
+}

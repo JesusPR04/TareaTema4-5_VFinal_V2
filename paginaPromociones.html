@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones del Restaurante</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="Sass/estilo.css">
+    <link rel="icon" href="Imagenes/icono.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h1 id="tituloPaginaPromocion">Promociones Especiales</h1>
+    
+    <section id="seccionPromocion">
+        <div class="card" style="width: 18rem;">
+            <img src="Imagenes/promocion1.jpg" class="card-img-top" alt="Primera promoción">
+            <div class="card-body">
+              <h5 class="card-title"><b>¡Come gratis!</b></h5>
+              <p class="card-text">
+                ¡Desafiamos a cualquier valiente a enfrentar nuestro desafío de velocidad gastronómica! Si puedes devorar uno de nuestros deliciosos platos en menos de quince minutos, ¡la comida será completamente gratis! ¿Te atreves a aceptar el reto? ¡Ven y demuestra tu apetito voraz!
+              </p>
+              <a href="index.html" class="boton">Ver menú</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="Imagenes/promocion2.jpg" class="card-img-top" alt="Primera promoción">
+            <div class="card-body">
+              <h5 class="card-title"><b>Para todos los cumpleañeros</b></h5>
+              <p class="card-text">
+                ¡Celebra tu cumpleaños con nosotros y disfruta de un descuento especial o un postre gratuito! Reserva con antelación y deja que hagamos tu día aún más especial.
+              </p>
+              <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Reservar
+              </button>
+            </div>  
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="Imagenes/promocion3.jpg" class="card-img-top" alt="Primera promoción">
+            <div class="card-body">
+              <h5 class="card-title"><b>Menú degustación</b></h5>
+              <p class="card-text">
+                Descubre una experiencia culinaria única con nuestro Menú Degustación. Deléitate con los platos más destacados de nuestro restaurante a precios especiales. Una oportunidad imperdible para los amantes de la buena comida.
+              </p>
+              <a href="index.html" class="boton">Ver menú</a>
+            </div>  
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="Imagenes/promocion4.jpg" class="card-img-top" alt="Primera promoción">
+            <div class="card-body">
+              <h5 class="card-title"><b>Descuento para estudiantes</b></h5>
+              <p class="card-text">
+                ¡Estudiantes, les ofrecemos un descuento exclusivo! Vengan a disfrutar de nuestras delicias culinarias a un precio más amigable para su presupuesto. Presenta tu identificación de estudiante y aprovecha esta oferta.
+              </p>
+              <a href="index.html" class="boton">Ver menú</a>
+            </div>  
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="Imagenes/promocion5.jpg" class="card-img-top" alt="Primera promoción">
+            <div class="card-body">
+              <h5 class="card-title"><b>Noche de familia</b></h5>
+              <p class="card-text">
+                Trae a toda la familia a nuestra Noche de Familia. Ofrecemos menús para niños a precios reducidos y actividades especiales para los más pequeños. Una experiencia familiar que todos disfrutarán.
+              </p>
+              <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Reservar
+              </button>
+            </div>  
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="Imagenes/promocion6.jpg" class="card-img-top" alt="Primera promoción">
+            <div class="card-body">
+              <h5 class="card-title"><b>Noche de entretenimiento</b></h5>
+              <p class="card-text">
+                Vive la emoción en nuestras Noches de Entretenimiento. Música en vivo, comedia o eventos temáticos, acompañados de promociones especiales. Una combinación perfecta de diversión y buena comida.
+              </p>
+              <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Reservar
+              </button>
+            </div>  
+        </div>
+    </section>    
+
+    <!--Modal de reserva-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content fondoModal">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmar Reserva</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h3>¡Felicidades! Acabas de reservar una mesa</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="boton" data-bs-dismiss="modal">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span
+                property="dct:title">SpaceFood</ span> por <span property="cc:attributionName">Jesús Pastor</span> está
+                marcado con <a id="copyRight" href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target=" _blank"
+                    rel="licencia noopener noreferrer" style="display:inline-block;">CC0 1.0<img
+                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                        src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img
+                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                        src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"></a></p>
+        <div id="redes-sociales">
+            <img src="Imagenes/instagram.png" alt="Icono de instagram">
+            <img src="Imagenes/youtube.png" alt="Icono de youtube">
+            <img src="Imagenes/pinterest.png" alt="Icono de pinterest">
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y Popper.js (Necesarios para Bootstrap) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

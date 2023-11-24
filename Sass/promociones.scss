@@ -1,0 +1,51 @@
+#seccionPromocion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.card {
+    background-color: #2A363B;
+    width: calc(50% - 20px);
+    /* Ancho del 50% del contenedor con espacio entre tarjetas */
+    margin-bottom: 20px;
+    /* Espacio adicional entre las tarjetas */
+}
+
+.card-title,
+.card-text {
+    color: #bda058;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    font-size: 16px;
+}
+
+.card-img-top {
+    height: 200px;
+    /* Tamaño fijo para la altura de la imagen */
+    -o-object-fit: cover;
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir completamente el contenedor sin distorsión */
+}
+
+.card-body {
+    height: 350px;
+    /* Ajusta la altura de la tarjeta según tus necesidades */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* Alinea los elementos al final del contenedor */
+}
+
+#tituloPaginaPromocion {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

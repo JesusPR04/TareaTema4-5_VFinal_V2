@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceFood</title>
+    <!-- Agregar enlaces a los archivos CSS y JavaScript de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Sass/estilo.css">
+    <link rel="icon" href="Imagenes/icono.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="Imagenes/logo.png" id="imagenPrincipal" alt="Logo">
+        <p>Deslice hacia abajo para Registrarse o Iniciar Sesión</p>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Centrar botones horizontalmente -->
+                <div class="d-flex justify-content-center">
+                    <button id="botonRegistro" class="boton" onclick="mostrarRegistro()">Registrarse</button>
+                </div>
+                <!-- Formulario de Registro (inicialmente oculto) -->
+                <div id="formularioRegistro" style="display: none;">
+                    <h2>Registro</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correo" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contrasena" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required>
+                        </div>
+                        <a href="paginaPrincipal.html" class="boton">Registrarse</a>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Centrar botones horizontalmente -->
+                <div class="d-flex justify-content-center">
+                    <button id="botonInicioSesion" class="boton" onclick="mostrarInicioSesion()">Iniciar Sesión</button>
+                </div>
+                <!-- Formulario de Inicio de Sesión (inicialmente oculto) -->
+                <div id="formularioInicioSesion" style="display: none;">
+                    <h2>Iniciar Sesión</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="correoInicio" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correoInicio" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contrasenaInicio" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="contrasenaInicio" placeholder="Contraseña" required>
+                        </div>
+                        <a href="paginaPrincipal.html" class="btn boton">Iniciar Sesión</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span
+                property="dct:title">SpaceFood</span> por <span property="cc:attributionName">Jesús Pastor</span> está
+            marcado con <a id="copyRight" href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1"
+                target=" _blank" rel="licencia noopener noreferrer" style="display:inline-block;">CC0 1.0<img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img
+                    style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                    src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"></a></p>
+        <div id="redes-sociales">
+            <img src="Imagenes/instagram.png" alt="Icono de instagram">
+            <img src="Imagenes/youtube.png" alt="Icono de youtube">
+            <img src="Imagenes/pinterest.png" alt="Icono de pinterest">
+        </div>
+    </footer>
+
+    <!-- Agregar los enlaces a los archivos JavaScript de Bootstrap al final del cuerpo del documento -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        // Función para hacer visible solamente el formulario de registrarse.
+        function mostrarRegistro() {
+            document.getElementById("formularioRegistro").style.display = "block";
+            document.getElementById("formularioInicioSesion").style.display = "none";
+            document.getElementById("botonRegistro").style.display = "none";
+            document.getElementById("botonInicioSesion").style.display = "none";
+        }
+
+        // Función para hacer visible solamente el formulario de iniciar sesión.
+        function mostrarInicioSesion() {
+            document.getElementById("formularioRegistro").style.display = "none";
+            document.getElementById("formularioInicioSesion").style.display = "block";
+            document.getElementById("botonRegistro").style.display = "none";
+            document.getElementById("botonInicioSesion").style.display = "none";
+        }
+    </script>
+</body>
+</html>
